@@ -1,6 +1,9 @@
 // 注意：live2d_path 参数应使用绝对路径
 const live2d_path = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN/";
-//const live2d_path = "/live2d-widget/";
+const live2d_jsonpath = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN/";
+// json文件貌似是要页面js自己http从后台请求的，并不是浏览器一次性拿过来的，为了方便本地调试，地址分开写了
+// const live2d_jsonpath="http://127.0.0.1:81/"
+// const live2d_path = "http://127.0.0.1:81/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -32,7 +35,7 @@ Promise.all([
 	loadExternalResource(live2d_path + "waifu-tips.js", "js")
 ]).then(() => {
 	initWidget({
-		waifuPath: live2d_path + "waifu-tips.json",
+		waifuPath: live2d_jsonpath + "waifu-tips.json",
 		//apiPath: "https://live2d.fghrsh.net/api/",
 		cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 	});
