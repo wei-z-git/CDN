@@ -1,6 +1,6 @@
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN/";
-const live2d_jsonpath = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN@1.0.3/";
+const live2d_jsonpath = "https://cdn.jsdelivr.net/gh/wei-z-git/CDN@1.0.3/";
 // json文件貌似是要页面js自己http从后台请求的，并不是浏览器一次性拿过来的，为了方便本地调试，地址分开写了
 // const live2d_jsonpath="http://127.0.0.1:81/"
 // const live2d_path = "http://127.0.0.1:81/";
